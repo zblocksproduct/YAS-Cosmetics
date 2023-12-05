@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import * as tga from "../../components/tga-verifier.js";
 import Header from "../../components/header";
 import Footer from "../../components/footer";
 import Modal from "../../components/modal";
