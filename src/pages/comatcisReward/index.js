@@ -28,7 +28,7 @@ export default function CosmaticsReward() {
                   </p>
                   <div className="h-[74px] w-[100%] flex justify-center items-center bg-[#1C1C1C] sm:mt-[48px] mt-[25px] cursor-pointer" onClick={() => {
               window.location.href =
-              "https://wallettest.zblocks.io?gift=38f2e57d0e2067e1bc75f01cef47&hint=microsoft";}}>
+              "https://wallettest.zblocks.io?gift=be1e1cfc64727b7edb90004e4858&hint=microsoft";}}>
             
                     <img src="/microsoft.png" alt="" />
                     <p className="text-white sm:text-[22px] text-[18px] font-medium myfont1 ml-[10px]">
@@ -37,7 +37,7 @@ export default function CosmaticsReward() {
                   </div>
                   <div className="h-[74px] w-[100%] flex justify-center items-center bg-[#1C1C1C] mt-[15px] cursor-pointer" onClick={() => {
               window.location.href =
-              "https://wallettest.zblocks.io?gift=38f2e57d0e2067e1bc75f01cef47&hint=google";
+              "https://wallettest.zblocks.io?gift=be1e1cfc64727b7edb90004e4858&hint=google";
             }}>
                     <img src="/google.png" alt="" />
                     <p className="text-white sm:text-[22px] text-[18px] font-medium myfont1 ml-[10px]">
