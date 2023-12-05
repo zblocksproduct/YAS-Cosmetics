@@ -16,7 +16,7 @@ export default function Brush() {
 
 async function checkTrue() {
     if (await verify()) {
-      openModal();
+      handleOpenModal();
     }
   }
 
