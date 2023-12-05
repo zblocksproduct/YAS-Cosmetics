@@ -13,6 +13,28 @@ export default function Brush() {
   const handleCloseModal = () => {
     setModalOpen(false);
   };
+
+async function checkTrue() {
+    if (await verify()) {
+      openModal();
+    }
+  }
+
+  async function verify() {
+    const conf = {
+      code: 'Z1701785727770347',
+      id: '44e2eea6-0260-4070-a399-07538e67085a',
+    };
+    const response = await tga.GatedVerifier.verify(conf);
+    if (response.status) {
+      // response.data.verified true means user has required NFT.
+      return response.data.verified;
+    } else {
+      console.error(response.data.errorMessage);
+      return false;
+    }
+  }
+  
   return (
     <div>
       <div>
@@ -35,7 +57,7 @@ export default function Brush() {
                     For all YAS Cosmetics Foundation Card owners
                   </p>
                   <div
-                    onClick={handleOpenModal}
+                    onClick={checkTrue}
                     className="h-[74px] sm:w-[287px] flex justify-center items-center bg-[#1C1C1C] md:mt-[48px] mt-[15px] cursor-pointer"
                   >
                     <p className="text-white text-[22px] font-medium myfont1 ml-[10px]">
