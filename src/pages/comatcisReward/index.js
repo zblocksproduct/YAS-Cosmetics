@@ -26,13 +26,18 @@ export default function CosmaticsReward() {
                     <span className="italic"> Elegance Foundation Card. </span>{" "}
                     by YAS Cosmetics
                   </p>
-                  <div className="h-[74px] w-[100%] flex justify-center items-center bg-[#1C1C1C] sm:mt-[48px] mt-[25px] cursor-pointer">
+                  <div className="h-[74px] w-[100%] flex justify-center items-center bg-[#1C1C1C] sm:mt-[48px] mt-[25px] cursor-pointer" onClick={() => {
+              window.location.href =
+              "https://wallettest.zblocks.io?gift=38f2e57d0e2067e1bc75f01cef47&hint=microsoft";>
                     <img src="/microsoft.png" alt="" />
                     <p className="text-white sm:text-[22px] text-[18px] font-medium myfont1 ml-[10px]">
                       Continue with Microsoft
                     </p>
                   </div>
-                  <div className="h-[74px] w-[100%] flex justify-center items-center bg-[#1C1C1C] mt-[15px] cursor-pointer">
+                  <div className="h-[74px] w-[100%] flex justify-center items-center bg-[#1C1C1C] mt-[15px] cursor-pointer" onClick={() => {
+              window.location.href =
+              "https://wallettest.zblocks.io?gift=38f2e57d0e2067e1bc75f01cef47&hint=google";
+            }}>
                     <img src="/google.png" alt="" />
                     <p className="text-white sm:text-[22px] text-[18px] font-medium myfont1 ml-[10px]">
                       Continue with Google
