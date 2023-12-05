@@ -14,6 +14,28 @@ export default function MakeupLooks() {
   const handleCloseModal = () => {
     setModalOpen(false);
   };
+
+async function checkTrue() {
+    if (await verify()) {
+      openModal();
+    }
+  }
+
+  async function verify() {
+    const conf = {
+      code: 'Z1701785727770347',
+      id: '44e2eea6-0260-4070-a399-07538e67085a',
+    };
+    const response = await tga.GatedVerifier.verify(conf);
+    if (response.status) {
+      // response.data.verified true means user has required NFT.
+      return response.data.verified;
+    } else {
+      console.error(response.data.errorMessage);
+      return false;
+    }
+  }
+  
   return (
     <div>
       <Header1 />
@@ -149,7 +171,7 @@ export default function MakeupLooks() {
           Ready to get started?
         </p>
         <div
-          onClick={handleOpenModal}
+          onClick={checkTrue}
           className="cursor-pointer bg-[#4F2323] font-medium max-w-[412px] w-[100%] m-auto h-[71px] rounded-full sm:text-[20px] text-[16px] flex justify-center items-center text-white mt-[20px]"
         >
           Claim using my YAS Foundation Card
