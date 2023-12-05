@@ -17,7 +17,7 @@ export default function MakeupLooks() {
 
 async function checkTrue() {
     if (await verify()) {
-      openModal();
+      handleOpenModal();
     }
   }
 
