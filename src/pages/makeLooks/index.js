@@ -215,7 +215,7 @@ async function checkTrue() {
         </h1>
         <p className="text-center myfont1">
           You now have access to the{" "}
-          <span className="font-semibold"> free online course</span>
+          <span className="font-semibold"> free online course</span>.
         Close this tab to continue shopping.
         </p>
       </Modal>
