@@ -214,9 +214,9 @@ async function checkTrue() {
           Success!
         </h1>
         <p className="text-center myfont1">
-          Your discounts will be{" "}
-          <span className="font-semibold"> automatically applied</span> to your
-          basket as you shop. Close this tab to continue shopping.
+          You now have access to the{" "}
+          <span className="font-semibold"> free online course</span>
+        Close this tab to continue shopping.
         </p>
       </Modal>
     </div>
